@@ -3,12 +3,26 @@
 @{
     ViewData["Title"] = "Index";
 }
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 
+<style>
+    .TODO, .DOING, .DONE {
+        min-height: 100px;
+        border: 1px solid #ccc;
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+</style>
 <h1>Index</h1>
 
 <p>
     <a asp-action="Create">Create New</a>
 </p>
+<div class="row">
+    <div class="col-md-4">
+<div class="TODO">
+    <h2> TO DO </h2>
 <table class="table">
     <thead>
         <tr>
@@ -57,3 +71,19 @@
 }
     </tbody>
 </table>
+
+    </div>
+</div>
+    <div class="col-md-4">
+<div class="DOING">
+            <h2> DOING </h2>
+
+</div>
+    </div>
+    <div class="col-md-4">
+<div class="DONE">
+            <h2> DONE </h2>
+</div>
+    </div>
+</div>
+
